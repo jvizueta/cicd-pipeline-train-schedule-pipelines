@@ -10,7 +10,9 @@ pipeline {
   }
   
   post{
-    archiveArtifacts 'dist/trainSchedule.zip'
+    success{
+      archiveArtifacts 'dist/trainSchedule.zip'
+    }
   }
   
 }
